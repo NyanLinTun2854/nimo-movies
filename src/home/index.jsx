@@ -10,8 +10,8 @@ const Home = () => {
       <MainNav />
       <div className="w-full h-full">
         <SideBar />
-        <div className="pt-[80px] pl-0 lg:pl-[240px] w-full h-auto bg-[#1f1f1f]">
-          <div className="w-full h-full grid grid-cols-6 gap-x-4 gap-y-2 px-[40px]">
+        <div className="pt-[80px] pl-0 lg:pl-[240px] w-full h-auto bg-[#121212]">
+          <div className="w-full h-full grid grid-cols-6 gap-x-4 gap-y-4 px-[40px]">
             {movies.map((i) => (
               <MovieCard />
             ))}

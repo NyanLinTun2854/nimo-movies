@@ -3,7 +3,7 @@ import { BiSolidCircle } from "react-icons/bi";
 
 const MovieCard = () => {
   return (
-    <div className="w-full h-auto flex flex-col gap-2">
+    <div className="w-full h-auto flex flex-col gap-1">
       <div className="w-full h-auto">
         <img
           className="w-full h-full"

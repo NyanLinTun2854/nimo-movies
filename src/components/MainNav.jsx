@@ -3,7 +3,7 @@ import { AiFillYoutube } from "react-icons/ai";
 
 const MainNav = () => {
   return (
-    <div className="w-full h-[80px] bg-[#1f1f1f] fixed top-0 left-0 z-20">
+    <div className="w-full h-[60px] bg-[#1f1f1f] fixed top-0 left-0 z-20">
       <div className="w-full h-full flex flex-col lg:flex-row items-center justify-between px-6">
         <AiFillYoutube className="text-[50px] text-[red]" />
         <form
