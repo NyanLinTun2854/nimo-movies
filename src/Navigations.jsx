@@ -8,7 +8,7 @@ const Navigations = ({ children }) => {
       <MainNav />
       <div className="w-full h-full">
         <SideBar />
-        <div className="pt-[60px] pl-0 lg:pl-[240px] w-full h-auto bg-[#121212]">
+        <div className=" pl-0 lg:pl-[240px] w-full h-auto bg-[#121212]">
           {children}
         </div>
       </div>
