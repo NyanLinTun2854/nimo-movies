@@ -8,6 +8,7 @@ export default {
       md: "760px",
       lg: "1000px",
       xl: "1280px",
+      ml: "1400px",
       extra: "2000px",
     },
     container: {

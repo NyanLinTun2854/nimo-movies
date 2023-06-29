@@ -5,7 +5,7 @@ const ApiRequest = async (value) => {
   let result,
     responseType,
     parameter,
-    path = "https://api.themoviedb.org/3/movie/";
+    path = "https://api.themoviedb.org/3/";
 
   const userToken =
     "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZjlmYjg4YWNhOWZlYjEwYzM5NTg4ZTk0NDlmMWZlMSIsInN1YiI6IjY0OWE1YmUxZDM1ZGVhMDEwYjgwNGNmOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.faqh-TOsoAJ8qumSlm15trkP93-PoQ-l-gpyVoiYAew";
@@ -19,8 +19,6 @@ const ApiRequest = async (value) => {
     return config;
   });
 
-  // to decide responseType is exists or not
-  value.type !== undefined ? (responseType = value.type) : (responseType = "");
   if (
     value.method === "post" ||
     value.method === "patch" ||
@@ -32,7 +30,6 @@ const ApiRequest = async (value) => {
       method: value.method,
       url: value.url,
       data: value.params,
-      responseType,
     };
   } else {
     parameter = {
@@ -49,6 +46,7 @@ const ApiRequest = async (value) => {
       result = response;
     })
     .catch((err) => (result = err));
+  console.log(result);
   return result;
 };
 
