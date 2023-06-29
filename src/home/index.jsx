@@ -77,9 +77,7 @@ const Home = () => {
                   <BeatLoader color="red" loading={true} size={10} />
                 </div>
               ) : (
-                <div className="w-full text-center bg-green-500 text-xl font-bold">
-                  End
-                </div>
+                <div className="w-full text-center text-xl font-bold">End</div>
               )
             }
           ></InfiniteScroll>
